@@ -1,34 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Languages: HTML, CSS, Javascript, React.js
+Additions: API
 
-## Available Scripts
 
-In the project directory, you can run:
+ToDo app where users can add todos, check off todos as completed, and delete todos. I used an API to list, save, modify, and delete your todos via AJAX in Javascript. 
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-Adding a new ToDo can be done both by pressing enter and when clicking a button. This is best accomplished by executing your code when the form is submitted, instead of when the user presses a button.
+-After adding a ToDo, the input area for new ToDos should become blank
+-New ToDos added to list
+-Checking off a ToDo should cause it to stay on the list but be styled differently (maybe strikethrough, or faded, etc)
+-Deleting a ToDo should remove it from the list entirely
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm run deploy`
-
-**PREREQUISITE: Edit "homepage" in `package.json` file and replace "username" with your username.**
-
-**PREREQUISITE: Change the "source branch" in the Github Pages setting on your Github repo to `gh-pages`**
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-
-Your app will then be deployed to the `gh-pages` branch of your github repository.
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-When page loads, existing ToDos are loaded from the server
+-When new ToDo is added, send it to the server
+-When a ToDo is "checked off" or deleted, send that to the server
